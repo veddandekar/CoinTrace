@@ -3,7 +3,7 @@
     "static/js/0.29600df2.chunk.js": "/CoinTrace/static/js/0.29600df2.chunk.js",
     "static/js/1.97d4c9dd.chunk.js": "/CoinTrace/static/js/1.97d4c9dd.chunk.js",
     "main.css": "/CoinTrace/static/css/main.902c00fd.chunk.css",
-    "main.js": "/CoinTrace/static/js/main.fce48927.chunk.js",
+    "main.js": "/CoinTrace/static/js/main.f7be5e2f.chunk.js",
     "runtime-main.js": "/CoinTrace/static/js/runtime-main.ada69f8e.js",
     "static/js/4.de4e27a6.chunk.js": "/CoinTrace/static/js/4.de4e27a6.chunk.js",
     "static/js/5.b90f8e63.chunk.js": "/CoinTrace/static/js/5.b90f8e63.chunk.js",
@@ -16,7 +16,7 @@
     "static/js/12.0ec53eae.chunk.js": "/CoinTrace/static/js/12.0ec53eae.chunk.js",
     "static/js/13.10f13cf6.chunk.js": "/CoinTrace/static/js/13.10f13cf6.chunk.js",
     "index.html": "/CoinTrace/index.html",
-    "precache-manifest.dce083ab761f1703c2f054360c31c0b2.js": "/CoinTrace/precache-manifest.dce083ab761f1703c2f054360c31c0b2.js",
+    "precache-manifest.58205130b99e294f725c7768776bdfd0.js": "/CoinTrace/precache-manifest.58205130b99e294f725c7768776bdfd0.js",
     "service-worker.js": "/CoinTrace/service-worker.js",
     "static/js/1.97d4c9dd.chunk.js.LICENSE.txt": "/CoinTrace/static/js/1.97d4c9dd.chunk.js.LICENSE.txt",
     "static/js/4.de4e27a6.chunk.js.LICENSE.txt": "/CoinTrace/static/js/4.de4e27a6.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.ada69f8e.js",
     "static/js/5.b90f8e63.chunk.js",
     "static/css/main.902c00fd.chunk.css",
-    "static/js/main.fce48927.chunk.js"
+    "static/js/main.f7be5e2f.chunk.js"
   ]
 }
