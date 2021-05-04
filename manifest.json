@@ -18,9 +18,9 @@
 			"sizes": "512x512"
 		}
 	],
-	"start_url": "/",
+	"start_url": "/CoinTrace",
 	"display": "standalone",
 	"scope": "/",
-	"theme_color": "#111",
-	"background_color": "#111"
+	"theme_color": "#282828",
+	"background_color": "##282828"
 }
