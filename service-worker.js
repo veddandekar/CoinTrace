@@ -11,40 +11,16 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts(
-	"https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
-);
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-	"/CoinTrace/precache-manifest.a3031d9c5d77509ab9e4ea202940a179.js"
+  "/CoinTrace/precache-manifest.796bdfd7f374ec0c0409daabfcf76a12.js"
 );
 
-self.addEventListener("message", (event) => {
-	if (event.data && event.data.type === "SKIP_WAITING") {
-		self.skipWaiting();
-	}
-});
-
-self.addEventListener("fetch", (event) => {
-	// Skip cross-origin requests, like those for Google Analytics.
-	if (event.request.url.startsWith(self.location.origin)) {
-		event.respondWith(
-			caches.match(event.request).then((cachedResponse) => {
-				if (cachedResponse) {
-					return cachedResponse;
-				}
-
-				return caches.open("CoinBase").then((cache) => {
-					return fetch(event.request).then((response) => {
-						// Put a copy of the response in the runtime cache.
-						return cache.put(event.request, response.clone()).then(() => {
-							return response;
-						});
-					});
-				});
-			})
-		);
-	}
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 workbox.core.clientsClaim();
@@ -57,9 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(
-	workbox.precaching.getCacheKeyForURL("/CoinTrace/index.html"),
-	{
-		blacklist: [/^\/_/, /\/[^/?]+\.[^/]+$/],
-	}
-);
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/CoinTrace/index.html"), {
+  
+  blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
+});
