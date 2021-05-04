@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/CoinTrace/precache-manifest.a3031d9c5d77509ab9e4ea202940a179.js"
+  "/CoinTrace/precache-manifest.796bdfd7f374ec0c0409daabfcf76a12.js"
 );
 
 self.addEventListener('message', (event) => {
