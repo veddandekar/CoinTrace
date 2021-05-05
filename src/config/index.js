@@ -37,12 +37,12 @@ const themes = {
 		palette: {
 			type: "light",
 			background: {
-				default: "#fafafa",
-				paper: "#fff",
+				default: "#dfdfdf",
+				paper: "#f4f3f3",
 			},
 			primary: {
 				light: "#7986cb",
-				main: "#3f51b5",
+				main: "#b1bed5",
 				dark: "#303f9f",
 				contrastText: "#fff",
 			},
@@ -53,13 +53,13 @@ const themes = {
 		palette: {
 			type: "dark",
 			background: {
-				default: "#111",
-				paper: "#171717",
+				default: "#313131",
+				paper: "#414141",
 			},
 			primary: {
-				light: "#7986cb",
-				main: "#333",
-				dark: "#303f9f",
+				light: "#00adb5",
+				main: "#525252",
+				dark: "#393e46",
 				contrastText: "#fff",
 			},
 		},

@@ -120,7 +120,7 @@ function Portfolio() {
 								INVESTED
 								<br />
 								<Typography className={classes.amount}>
-									₹ {InvestedAmount.toFixed(2)}
+									₹{InvestedAmount.toFixed(2)}
 								</Typography>
 							</div>
 							<Divider
@@ -133,7 +133,7 @@ function Portfolio() {
 								CURRENT
 								<br />
 								<Typography className={classes.amount}>
-									₹ {currentAmount.toFixed(2)}
+									₹{currentAmount.toFixed(2)}
 								</Typography>
 								<Typography
 									className={
@@ -218,7 +218,7 @@ function Portfolio() {
 												>
 													<TableHead>
 														<TableRow>
-															<TableCell>Rem</TableCell>
+															<TableCell></TableCell>
 															<TableCell>Invested</TableCell>
 															<TableCell>P/L</TableCell>
 															<TableCell align="right">P/L %</TableCell>
@@ -246,14 +246,14 @@ function Portfolio() {
 																		/>
 																	</TableCell>
 																	<TableCell>
-																		₹ {(row.value * row.quantity).toFixed(2)}
+																		₹{(row.value * row.quantity).toFixed(2)}
 																	</TableCell>
 																	<TableCell
 																		className={
 																			rowPl > 0 ? classes.profit : classes.loss
 																		}
 																	>
-																		₹ {rowPl}
+																		₹{rowPl}
 																	</TableCell>
 																	<TableCell
 																		className={
@@ -337,12 +337,8 @@ function Portfolio() {
 							/>
 						</DialogContent>
 						<DialogActions>
-							<Button onClick={handleClose} color="secondary">
-								Cancel
-							</Button>
-							<Button onClick={addNewTransaction} color="secondary">
-								Add
-							</Button>
+							<Button onClick={handleClose}>Cancel</Button>
+							<Button onClick={addNewTransaction}>Add</Button>
 						</DialogActions>
 					</Dialog>
 					<Fab

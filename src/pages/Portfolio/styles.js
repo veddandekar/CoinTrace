@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	accordion: {
 		width: "100%",
+		// padding: "0",
 	},
 	accordionDetails: {
 		width: "85vw",
