@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		flex: 1,
 		flexDirection: "column",
-		marginTop: "-20vh",
+		marginTop: "-15vh",
 		overflow: "hidden",
 	},
 	card: {
@@ -20,29 +20,22 @@ const useStyles = makeStyles((theme) => ({
 	},
 	banner: {
 		textAlign: "center",
-		fontSize: "1.3em",
+		fontSize: "1.1em",
 		fontWeight: 900,
+		height: "7vh",
+		width: "17vw",
 	},
 	accordion: {
 		width: "100%",
-		// padding: "0",
 	},
 	accordionDetails: {
-		width: "85vw",
 		paddingBottom: "5vh",
 		overflowY: "hidden",
-		margin: "auto",
-		"align-items": "center",
-		"justify-content": "center",
 	},
 	icon: {
 		width: "100%",
 		height: "100%",
 		color: theme.palette.secondary.main,
-	},
-	iconBox: {
-		width: 50,
-		marginRight: 10,
 	},
 	title: {
 		"font-weight": 100,
@@ -62,7 +55,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	table: {
 		border: 0,
-		maxWidth: "30vw",
+		tableLayout: "fixed",
+		maxWidth: "80vw",
+		textAlign: "center",
 	},
 	fab: {
 		position: "absolute",

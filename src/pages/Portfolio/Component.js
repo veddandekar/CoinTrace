@@ -153,7 +153,7 @@ function Portfolio() {
 								variant="middle"
 							/>
 							<div className={classes.banner}>
-								P/L
+								ROI
 								<br />
 								<Typography
 									className={
@@ -192,7 +192,7 @@ function Portfolio() {
 										className={classes.accordion}
 									>
 										<AccordionSummary
-											expandIcon={<FaCaretDown />}
+											expandIcon={<FaCaretDown color="primary" />}
 											aria-controls={key + "bh-content"}
 											id={key + "bh-header"}
 										>
@@ -259,6 +259,7 @@ function Portfolio() {
 																		className={
 																			rowPl > 0 ? classes.profit : classes.loss
 																		}
+																		align="right"
 																	>
 																		{rowPlp}%
 																	</TableCell>
@@ -276,7 +277,7 @@ function Portfolio() {
 							"Add transactions to track!"
 						)
 					) : (
-						<CircularProgress />
+						<CircularProgress color="primary" />
 					)}
 					<Dialog
 						open={open}
@@ -347,7 +348,7 @@ function Portfolio() {
 						color="primary"
 						onClick={handleClickOpen}
 					>
-						<FaPlus />
+						<FaPlus color="primary" />
 					</Fab>
 				</Fb>
 			</Container>

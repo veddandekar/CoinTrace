@@ -14,10 +14,11 @@ const useStyles = makeStyles((theme) => ({
 		width: "100%",
 	},
 	accordionDetails: {
-		width: "80vw",
 		height: "50vh",
 		overflowY: "hidden",
 		margin: "auto",
+		overflowX: "clip",
+		maxWidth: "100vw",
 	},
 	icon: {
 		width: "100%",
@@ -47,6 +48,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	table: {
 		border: 0,
+		tableLayout: "fixed",
+		maxWidth: "80vw",
 	},
 	root: {
 		padding: "2px 4px",
