@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "111267cf3cf9d9afb55a3d7fcc84b208",
+    "revision": "7fbff738ce7ef3a83113a77da08f5673",
     "url": "/CoinTrace/index.html"
   },
   {
@@ -24,12 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CoinTrace/static/js/10.bc978d13.chunk.js"
   },
   {
-    "revision": "fc521408ff87da6fe2a9",
-    "url": "/CoinTrace/static/js/11.4d23d84c.chunk.js"
+    "revision": "a4e628d993b6797a7a22",
+    "url": "/CoinTrace/static/js/11.3434ea99.chunk.js"
   },
   {
-    "revision": "b4598ab5fa8d9954f674",
-    "url": "/CoinTrace/static/js/12.e33e0217.chunk.js"
+    "revision": "f4a25dcc611ff6ea8ab9",
+    "url": "/CoinTrace/static/js/12.c81cd597.chunk.js"
   },
   {
     "revision": "2d9d0fb253ebb9b903cd",
@@ -72,7 +72,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CoinTrace/static/js/main.f7be5e2f.chunk.js"
   },
   {
-    "revision": "9365a910be7a25c7c2ad",
-    "url": "/CoinTrace/static/js/runtime-main.c87ddd41.js"
+    "revision": "db8e10dd47b44dae4097",
+    "url": "/CoinTrace/static/js/runtime-main.924ffd6c.js"
   }
 ]);
