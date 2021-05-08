@@ -34,17 +34,16 @@ function Welcome() {
 	React.useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios(
-				"https://cors-anywhere.herokuapp.com/https://api.wazirx.com/api/v2/tickers"
+				"https://api.allorigins.win/get?url=https://api.wazirx.com/api/v2/tickers"
 			);
 
 			let favNames = JSON.parse(localStorage.getItem("favs")) || [];
 			let parsedData = {};
 			favNames.forEach((fav) => {
-				parsedData[fav] = result.data[fav];
+				parsedData[fav] = result.data.contents[fav];
 			});
-
 			setFavs(parsedData);
-			setData(result.data);
+			setData(JSON.parse(result.data.contents));
 			setLoading(false);
 		};
 
@@ -79,11 +78,11 @@ function Welcome() {
 		}
 		setExpanded(panel);
 		const result = await axios(
-			"https://cors-anywhere.herokuapp.com/https://api.wazirx.com/api/v2/trades?market=" +
+			"https://api.allorigins.win/get?url=https://api.wazirx.com/api/v2/trades?market=" +
 				panel
 		);
 		let parsedData = [];
-		result.data.forEach((item) => {
+		JSON.parse(result.data.contents).forEach((item) => {
 			parsedData.push({ price: item.price, time: item.created_at });
 		});
 		setTableData(parsedData);
