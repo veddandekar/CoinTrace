@@ -59,7 +59,7 @@ function Welcome() {
 				else {
 					let parsedData = {};
 					Object.keys(data).forEach((key, index) => {
-						if (key.includes(searchData.toLowerCase())) {
+						if (data[key]["base_unit"].includes(searchData.toLowerCase())) {
 							parsedData[key] = data[key];
 						}
 					});
@@ -142,7 +142,7 @@ function Welcome() {
 										key={key + index}
 										expanded={expanded === key}
 										onChange={handleChange(key)}
-										// TransitionProps={{ unmountOnExit: true }}
+										TransitionProps={{ unmountOnExit: true }}
 										className={classes.accordion}
 									>
 										<AccordionSummary

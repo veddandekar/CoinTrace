@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
 		flex: 1,
 		flexDirection: "column",
 		marginTop: "-15vh",
-		overflow: "hidden",
+		overflowY: "auto",
+		overflowX: "hidden",
 	},
 	card: {
 		marginTop: "10vh",
@@ -56,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 	table: {
 		border: 0,
 		tableLayout: "fixed",
-		maxWidth: "80vw",
+		maxWidth: "78vw",
 		textAlign: "center",
 	},
 	fab: {

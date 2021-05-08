@@ -2,13 +2,14 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
 	wrapper: {
-		height: "80vh",
+		height: "75vh",
 		userSelect: "none",
 		textAlign: "center",
 		width: "100%",
 		flex: 1,
 		flexDirection: "column",
-		overflowY: "hidden",
+		marginTop: "5vh",
+		overflowY: "auto",
 	},
 	accordion: {
 		width: "100%",
@@ -49,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 	table: {
 		border: 0,
 		tableLayout: "fixed",
-		maxWidth: "80vw",
+		maxWidth: "78vw",
 	},
 	root: {
 		padding: "2px 4px",
