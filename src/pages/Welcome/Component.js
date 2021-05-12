@@ -34,7 +34,8 @@ function Welcome() {
 	React.useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios(
-				"https://api.allorigins.win/get?url=https://api.wazirx.com/api/v2/tickers"
+				"https://api.allorigins.win/get?url=https://api.wazirx.com/api/v2/tickers?" +
+					new Date().getTime()
 			);
 
 			let favNames = JSON.parse(localStorage.getItem("favs")) || [];
@@ -79,7 +80,7 @@ function Welcome() {
 		setExpanded(panel);
 		const result = await axios(
 			"https://api.allorigins.win/get?url=https://api.wazirx.com/api/v2/trades?market=" +
-				panel
+				panel,
 		);
 		let parsedData = [];
 		JSON.parse(result.data.contents).forEach((item) => {

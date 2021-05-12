@@ -54,7 +54,7 @@ function Portfolio() {
 	React.useEffect(() => {
 		const fetchData = async () => {
 			const result = await axios(
-				"https://api.allorigins.win/get?url=https://api.wazirx.com/api/v2/tickers"
+				"https://api.allorigins.win/get?url=https://api.wazirx.com/api/v2/tickers?" + new Date().getTime()
 			);
 			setData(JSON.parse(result.data.contents));
 			setPortfolio(JSON.parse(localStorage.getItem("portfolio")) || {});
